@@ -1,0 +1,42 @@
+// NC mashine.odl : type library source for NC mashine.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (NC mashine.tlb).
+
+[ uuid(606C4006-97B6-11DA-9057-0050BF4A4CEB), version(1.0) ]
+library NCmashine
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CNCmashineDoc
+	
+		[ uuid(606C4007-97B6-11DA-9057-0050BF4A4CEB) ]
+	dispinterface INCmashine
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CNCmashineDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CNCmashineDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CNCmashineDoc
+	
+		[ uuid(606C4005-97B6-11DA-9057-0050BF4A4CEB) ]
+	coclass Document
+	{
+				[default] dispinterface INCmashine;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

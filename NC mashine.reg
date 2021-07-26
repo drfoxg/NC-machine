@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\NCmashine.Document = NCmash Document
+HKEY_CLASSES_ROOT\NCmashine.Document\CLSID = {606C4005-97B6-11DA-9057-0050BF4A4CEB}
+
+HKEY_CLASSES_ROOT\CLSID\{606C4005-97B6-11DA-9057-0050BF4A4CEB} = NCmash Document
+HKEY_CLASSES_ROOT\CLSID\{606C4005-97B6-11DA-9057-0050BF4A4CEB}\ProgId = NCmashine.Document
+HKEY_CLASSES_ROOT\CLSID\{606C4005-97B6-11DA-9057-0050BF4A4CEB}\LocalServer32 = NC MASHINE.EXE
